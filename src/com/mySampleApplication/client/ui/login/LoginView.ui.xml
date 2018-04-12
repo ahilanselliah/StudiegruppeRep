@@ -1,0 +1,23 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <ui:style>
+        .outerPanel
+
+        .centerBox
+
+        .title
+
+    </ui:style>
+
+
+    <g:HTMLPanel styleName="{style.outerPanel}">
+        <g:VerticalPanel styleName="{style.centerBox}" horizontalAlignment="ALIGN_CENTER">
+            <g:Label text="ViCyklerTilArbejde" styleName="{style.title}"/>
+            <g:TextBox styleName="textInput" ui:field="usernameTextBox" alignment="CENTER"/>
+            <g:PasswordTextBox styleName="textInput" ui:field="passwordTextBox" alignment="CENTER"/>
+            <g:Button styleName="btn" text="Login" ui:field="loginBtn"/>
+        </g:VerticalPanel>
+
+    </g:HTMLPanel>
+
+</ui:UiBinder>
