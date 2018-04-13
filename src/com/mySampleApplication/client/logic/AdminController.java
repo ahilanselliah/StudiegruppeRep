@@ -24,7 +24,5 @@ public class AdminController {
         listProviderUsers = new ListDataProvider <>();
 
         adminMainView.getAdminUsersView().initUsersTable(ListProviderUsers);
-
-        /////askldjlls
     }
 }
