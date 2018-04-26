@@ -25,4 +25,15 @@ public class AdminController {
 
         adminMainView.getAdminUsersView().initUsersTable(ListProviderUsers);
     }
+
+    public void loadUser(User currentUser){
+        this.currentUser = currentUser;
+        loadTables();
+    }
+
+    public void bindHandlers() {
+        adminMainView.getClickHandlers(new MenuClickHandler());
+        adminMainView.getAdminUsersView().addClickHandler(new CreateUserClickHandler());
+        adminMainView.getAdminUsersView().addClickHandler(new DeleteUserHandler());
+    }
 }
